@@ -27,7 +27,7 @@ public class Main extends ListenerAdapter {
 
 
     public static void main(String[] args) throws LoginException {
-        JDA api = new JDABuilder("NTYxNjk5MjUwMzA4OTA3MDA4.XKABOA.q6TsqAr_5_B_dzL28i4FNHGxLBg").build();
+        JDA api = new JDABuilder("censored api key").build();
         api.addEventListener(new Main());
         updateSchedule();
 
