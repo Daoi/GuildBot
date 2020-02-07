@@ -14,7 +14,6 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.*;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -24,6 +23,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+//Convert discord chat commands/input into google sheets columns/fields, 
+//update spreadsheets with chatbot instead of manually.
+
 
 public class RosterHandler {
     private static final String APPLICATION_NAME = "Google RosterHandler API Java Quickstart";
@@ -63,7 +65,7 @@ public class RosterHandler {
     public static void updateRoster(String[] input, String[] name) throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "10k5PLZy8AXmb3tH3YdsxGFXGwEaMgfiJSnbnG-ZNx7A";
+        final String spreadsheetId = "censored";
         final String range = "Roster";
         List<Request> requests = new ArrayList<>();
 
